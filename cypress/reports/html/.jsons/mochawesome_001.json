@@ -1,0 +1,116 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-11-05T12:06:40.031Z",
+    "end": "2021-11-05T12:06:47.085Z",
+    "duration": 7054,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e7e34781-6e81-4cf1-a50c-1ef66e19d1c3",
+      "title": "",
+      "fullFile": "cypress/integration/Basic/TC_02_TestPOM1.spec.js",
+      "file": "cypress/integration/Basic/TC_02_TestPOM1.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "af964866-19e2-40da-90d2-76739281b006",
+          "title": "Test with page object",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Open Sign in page",
+              "fullTitle": "Test with page object Open Sign in page",
+              "timedOut": null,
+              "duration": 7009,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"\\\\Basic\\\\TC_02_TestPOM1.spec.js\\\\Test with page object -- Open Sign in page (failed).png\"\n      }\n    ]\n  ]\n}",
+              "code": "_naviagtionPageObject.naviagtionPage.openSinginPage();\ncy.wait(1000); // signinPage.loginAccount()\ncy.LoginWithUser();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `//input[@placeholder='Password1']`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `//input[@placeholder='Password1']`, but never found it.\n    at Context.eval (https://angular.realworld.io/__cypress/tests?p=cypress\\support\\index.js:129:6)",
+                "diff": null
+              },
+              "uuid": "2710e08d-da6c-4938-8cd1-0d7d61adb21d",
+              "parentUUID": "af964866-19e2-40da-90d2-76739281b006",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "2710e08d-da6c-4938-8cd1-0d7d61adb21d"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 7009,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "reporterEnabled": "mochawesome",
+        "mochawesomeReporterOptions": {
+          "reportDir": "cypress/reports/mochawesome",
+          "chart": true,
+          "embededScreenshot": false,
+          "reportPageTitle": "Test demo cypress"
+        },
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "5.2.0"
+    }
+  }
+}
